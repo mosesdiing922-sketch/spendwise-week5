@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpendWise Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Sidebar / navigation -->
+    <aside class="sidebar">
+      <p class="logo">SpendWise</p>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link active" href="#">Dashboard</a></li>
+          <li><a class="nav-link" href="#">Expenses</a></li>
+          <li><a class="nav-link" href="#">Budgets</a></li>
+          <li><a class="nav-link" href="#">Reports</a></li>
+          <li><a class="nav-link" href="#">Settings</a></li>
+        </ul>
+      </nav>
+
+      <p class="sidebar-note">Static preview. Live data arrives in later weeks.</p>
+    </aside>
+
+    <!-- Header -->
+    <header class="topbar">
+      <div>
+        <h1>Dashboard</h1>
+        <p class="subtitle">November 2026 overview</p>
+      </div>
+      <div class="topbar-actions">
+        <button type="button" class="btn">Add expense</button>
+        <span class="avatar" aria-label="Signed in as Mercy">M</span>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="content">
+
+      <section class="summary" aria-label="Monthly summary">
+        <div class="stat">
+          <span class="stat-label">Total budget</span>
+          <span class="stat-value">$2,370</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Spent so far</span>
+          <span class="stat-value">$2,082</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Remaining</span>
+          <span class="stat-value">$288</span>
+        </div>
+      </section>
+
+      <h2 class="section-title">Spending by category</h2>
+
+      <section class="cards" aria-label="Category cards">
+
+        <article class="card" tabindex="0">
+          <div class="card-top">
+            <h3>Food</h3>
+            <span class="badge">On track</span>
+          </div>
+          <p class="amount">$420</p>
+          <div class="bar"><span style="--pct: 84%"></span></div>
+          <div class="card-bottom">
+            <span>of $500 budget</span>
+            <span>84%</span>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-top">
+            <h3>Transport</h3>
+            <span class="badge">On track</span>
+          </div>
+          <p class="amount">$135</p>
+          <div class="bar"><span style="--pct: 68%"></span></div>
+          <div class="card-bottom">
+            <span>of $200 budget</span>
+            <span>68%</span>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-top">
+            <h3>Rent</h3>
+            <span class="badge">Paid</span>
+          </div>
+          <p class="amount">$900</p>
+          <div class="bar"><span style="--pct: 100%"></span></div>
+          <div class="card-bottom">
+            <span>of $900 budget</span>
+            <span>100%</span>
+          </div>
+        </article>
+
+        <article class="card over" tabindex="0">
+          <div class="card-top">
+            <h3>Entertainment</h3>
+            <span class="badge">Over budget</span>
+          </div>
+          <p class="amount">$185</p>
+          <div class="bar"><span style="--pct: 100%"></span></div>
+          <div class="card-bottom">
+            <span>of $150 budget</span>
+            <span>123%</span>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-top">
+            <h3>Savings</h3>
+            <span class="badge">On track</span>
+          </div>
+          <p class="amount">$300</p>
+          <div class="bar"><span style="--pct: 75%"></span></div>
+          <div class="card-bottom">
+            <span>of $400 goal</span>
+            <span>75%</span>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-top">
+            <h3>Utilities</h3>
+            <span class="badge">On track</span>
+          </div>
+          <p class="amount">$142</p>
+          <div class="bar"><span style="--pct: 65%"></span></div>
+          <div class="card-bottom">
+            <span>of $220 budget</span>
+            <span>65%</span>
+          </div>
+        </article>
+
+      </section>
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
